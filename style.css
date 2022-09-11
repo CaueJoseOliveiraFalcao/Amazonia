@@ -7,6 +7,10 @@ body {
     margin: 0;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 header {
     background-color: white;
     color: green;
@@ -193,5 +197,94 @@ header a:hover {
         letter-spacing: 5px;
         font-size: 20px;
         font-family: 'Dancing Script';
+    }
+}
+
+
+/*historia*/
+
+.snopse {
+    text-align: center;
+    color: white;
+    padding-top: 8rem;
+    margin: 0;
+    font-size: 40px;
+}
+
+.historia {
+    background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.5)), url('./img/amazon-ga6bb0d216_1920\ \(1\).jpg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+    height: 100vh;
+    width: 100%;
+    background-blend-mode: normal;
+    color: green;
+}
+
+.grd {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 5rem;
+    flex-wrap: wrap;
+}
+
+.spn {
+    max-width: 50rem;
+    color: white;
+    font-family: sans-serif;
+}
+
+.spn-titulo {
+    font-size: 30px;
+    text-align: center;
+}
+
+.spn-p {
+    font-size: 20px;
+}
+
+@media (max-width:1311px) {
+    .historia {
+        background-size: cover;
+    }
+}
+
+@media (max-width:768px) {
+    .historia {
+        height: 100%;
+    }
+    .img-img {
+        width: 500px;
+    }
+    .spn {
+        max-width: 80%;
+        color: white;
+        font-family: sans-serif;
+    }
+    .spn-p {
+        font-size: 17px;
+    }
+}
+
+@media (max-width:426px) {
+    .historia {
+        height: 100%;
+    }
+    #img {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .img-img {
+        width: 95%;
+    }
+    .spn {
+        max-width: 90%;
+        color: white;
+        font-family: sans-serif;
+    }
+    .spn-p {
+        font-size: 15px;
     }
 }
