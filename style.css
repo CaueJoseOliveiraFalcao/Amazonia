@@ -169,3 +169,29 @@ header a:hover {
         font-family: 'Dancing Script';
     }
 }
+
+@media (max-width:320px) {
+    .cadp-t {
+        letter-spacing: 15px;
+        font-family: 'Roboto', sans-serif;
+        font-size: 13px;
+    }
+    .hora-t {
+        letter-spacing: 5px;
+        font-size: 20px;
+    }
+    .dia-t {
+        letter-spacing: 5px;
+        font-size: 25px;
+    }
+    .serie-t {
+        letter-spacing: 5px;
+        font-size: 20px;
+        font-family: 'Dancing Script';
+    }
+    .ves-t {
+        letter-spacing: 5px;
+        font-size: 20px;
+        font-family: 'Dancing Script';
+    }
+}
