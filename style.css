@@ -1,21 +1,27 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
 /*header*/
-body{
+
+body {
     box-sizing: border-box;
     margin: 0;
 }
-header{
-    background-color: black;
-    color: white;
+
+header {
+    background-color: white;
+    color: green;
     width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
     padding: 0;
+    border-bottom-style: solid;
+    position: fixed;
 }
-header a{
-    color: white;
+
+header a {
+    color: green;
     text-decoration: none;
     margin: 0 2rem;
     font-family: 'Roboto', sans-serif;
@@ -23,66 +29,133 @@ header a{
     padding: 0.4rem;
 }
 
-header a:hover{
+header a:hover {
     background-color: white;
     color: black;
 }
 
-.mobile{
+.mobile {
     position: fixed;
     display: flex;
     width: 40%;
     height: 100%;
-    background-color: #1A1919;
+    background-color: #30591f;
     right: 0;
     margin-top: -110vh;
     flex-direction: column;
     align-items: center;
     transition: all 0.3s;
 }
-.mobile a{
+
+.mobile a {
     margin: 1rem 0;
     font-size: 1.2rem;
 }
 
-.hambug{
+.hambug {
     display: none;
 }
+
 @media (max-width:768px) {
-    header a{
+    header a {
         margin: 0 0.5rem;
     }
 }
 
 @media (max-width:426px) {
-    header h1{
+    header h1 {
         font-size: 1.7rem;
     }
-    .dev{
+    .dev {
         display: none;
     }
-    .mobile{
-        
+    .mobile {
         height: 101%;
-        
     }
-    .hambug{
+    .hambug {
         display: block;
-        
     }
-    .hambug div{
+    .hambug div {
         width: 25px;
         margin: 0.3rem 0;
         height: 2px;
-        background-color: white;
+        color: green;
+        background-color: green;
     }
-    .mobile li{
+    .mobile li {
         margin: 1rem 0;
         font-size: 1.2rem;
         color: white;
         list-style: none;
         text-decoration: none;
     }
-    
-    
+}
+
+
+/*main*/
+
+.main {
+    background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.5)), url('./img/amazonia_back.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+    height: 100vh;
+    width: 100%;
+    background-blend-mode: normal;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.cadp-t {
+    letter-spacing: 15px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.hora-t {
+    letter-spacing: 5px;
+    font-size: 40px;
+}
+
+.dia-t {
+    letter-spacing: 5px;
+    font-size: 60px;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+.serie-t {
+    letter-spacing: 5px;
+    font-size: 30px;
+    font-family: 'Dancing Script';
+}
+
+.ves-t {
+    letter-spacing: 5px;
+    font-size: 30px;
+    font-family: 'Dancing Script';
+}
+
+@media (max-width:1059px) {
+    .main {
+        background-position: auto;
+        background-size: cover;
+    }
+}
+
+@media (max-width:426px) {
+    .cadp-t {
+        letter-spacing: 15px;
+        font-family: 'Roboto', sans-serif;
+        font-size: 13px;
+    }
+    .hora-t {
+        letter-spacing: 5px;
+        font-size: 25px;
+    }
+    .dia-t {
+        letter-spacing: 5px;
+        font-size: 30px;
+    }
 }
