@@ -99,7 +99,7 @@ header a:hover {
 /*main*/
 
 .main {
-    background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.5)), url('./img/amazonia_back.png');
+    background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.5)), url('./img/trees-g54d4f2ca3_1920.jpg');
     background-repeat: no-repeat;
     background-size: 100%;
     background-position: center;
@@ -116,16 +116,19 @@ header a:hover {
 .cadp-t {
     letter-spacing: 15px;
     font-family: 'Roboto', sans-serif;
+    margin-top: 3rem;
 }
 
 .hora-t {
     letter-spacing: 5px;
     font-size: 40px;
+    margin-top: 3rem;
 }
 
 .dia-t {
     letter-spacing: 5px;
     font-size: 60px;
+    margin-top: 3rem;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
@@ -133,12 +136,14 @@ header a:hover {
     letter-spacing: 5px;
     font-size: 30px;
     font-family: 'Dancing Script';
+    margin-top: 3rem;
 }
 
 .ves-t {
     letter-spacing: 5px;
     font-size: 30px;
     font-family: 'Dancing Script';
+    margin-top: 3rem;
 }
 
 @media (max-width:1059px) {
@@ -247,6 +252,7 @@ header a:hover {
 @media (max-width:1311px) {
     .historia {
         background-size: cover;
+        height: 100%;
     }
 }
 
@@ -286,5 +292,67 @@ header a:hover {
     }
     .spn-p {
         font-size: 15px;
+    }
+}
+
+
+/*elenco*/
+
+.elenco {
+    background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.5)), url('./img/forest-g2d6fe1a2f_1920.jpg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+    height: 100vh;
+    width: 100%;
+    background-blend-mode: normal;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.dad {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+    border-style: solid;
+    border-color: white;
+    width: 50%;
+    padding: 1rem;
+}
+
+.elenco-x {
+    color: white;
+    text-align: center;
+    margin: 0;
+    margin-bottom: 3rem;
+}
+
+.card-custom {
+    background-color: transparent!important;
+    color: white;
+    display: flex!important;
+    justify-content: center;
+    flex-direction: column;
+    width: 50%;
+}
+
+@media (max-width:1467px) {
+    .elenco {
+        background-size: cover;
+    }
+    .historia {
+        background-size: cover;
+        height: 100%;
+    }
+}
+
+@media (max-width:768px) {
+    .img-fix {
+        width: 100%!important;
+    }
+    .img-fix img {
+        min-width: 100%!important;
     }
 }
